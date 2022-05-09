@@ -5,17 +5,20 @@ import { useParams } from "react-router-dom"
 export default function EditMenu(){
     let [inputs , setInputs] = useState({})
     let { id } = useParams()
-    
     function handleOnChange(event){
            let name = event.target.name
            let value = event.target.value
+
            setInputs(inputs => ({...inputs, [name]: value}))
+          
     }
 
     function handleOnSubmit(event){
         event.preventDefault();
         console.log('inputs:', inputs)
         addMenu(inputs)
+
+
         console.log('orders:', getMenus())
     }
   
