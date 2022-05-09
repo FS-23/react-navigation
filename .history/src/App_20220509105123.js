@@ -1,5 +1,5 @@
 
-import MenuList from "./components/MenuList";
+import MenuList from "./components/OrderList";
 import EditMenu from "./components/EditMenu";
 import MenuDetail from "./components/MenuDetail";
 import Home from "./components/Home";
